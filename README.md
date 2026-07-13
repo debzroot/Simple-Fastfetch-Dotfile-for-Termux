@@ -35,3 +35,8 @@ git clone https://github.com/debzroot/Simple-Dotfiles-Fastfetch-4Termux ~/.confi
 - Optimization: Performance tweaks for Termux inspired by the Android/Termux community.
 
 ---
+## 👍 Thanks To
+
+AndroidGeeksYT
+
+---
