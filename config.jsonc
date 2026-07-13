@@ -23,69 +23,72 @@
     "separator": " ▸ " // :
   },
   "modules": [
+        {
+      "type": "custom",
+      "format": "\u001b[36m👻 Ghost in the Shell 👻\u001b[0m"
+    },
+    "break",
     {
-      "type": "title"
+      "type": "custom",
+      "format": "\u001b[38;2;0;255;0m=========================\u001b[0m" // Garis atas warna #00ff00
     },
     "break",
     {
       "type": "os",
-      "key": "",
-      "keycolor": "yellow"
+      "key": "  ", // Ikon Ubuntu 
+      "keyColor": "yellow",
+      "format": "Ubuntu 26.04 LTS"
     },
     {
       "type": "kernel",
-      "key": "",
-      "keycolor": "red"
-    },
-    {
-      "type": "wm",
-      "key": "",
-      "keycolor": "magenta"
-    },
-    {
-      "type": "packages",
-      "key": "",
-      "keycolor": "magenta"
+      "key": "  ", // Ikon Linux
+      "keyColor": "white",
+      "format": "Linux 5.15.189"
     },
     {
       "type": "memory",
-      "key": "",
-      "keycolor": "magenta"
+      "key": " 󰍛 ", // Ikon Chip/RAM
+      "keyColor": "magenta",
+      "format": "{1} / {2}" // Menampilkan Terpakai / Total tanpa persentase
     },
     {
-      "type": "host",
-      "key": "",
-      "keycolor": "magenta"
+      "type": "packages",
+      "key": " 󰏖 ", // Ikon Kardus (Package)
+      "keyColor": "red"
+    },
+    {
+      "type": "disk",
+      "key": " 󰋊 ", // Ikon Hard disk / Storage
+      "keyColor": "blue",
+      "folders": "/"
+    },
+    {
+      "type": "command",
+      "key": " 󰁹 ",
+      "keyColor": "green",
+      "text": "echo \"$(cat /sys/class/power_supply/battery/capacity)%\""
+    },
+    {
+      "type": "host", // Host biasanya mendeteksi nama Chipset / SoC
+      "key": " 󰻠 ", // Ikon Motherboard / Chipset
+      "keyColor": "cyan",
+      "format": "UMS9230E SOC"
     },
     {
       "type": "cpu",
-      "key": "",
-      "keycolor": "magenta"
-    },
-    {
-      "type": "swap",
-      "key": "",
-      "keycolor": "magenta"
-    },
-    {
-      "type": "battery",
-      "key": "",
-      "keycolor": "red"
+      "key": "  ", // Ikon Prosesor
+      "keyColor": "blue",
+      "format": "8 CORES @ 1.82 GHz"
     },
     {
       "type": "uptime",
-      "key": "",
-      "keycolor": "yellow"
-    },
-    {
-      "type": "colors",
-      "paddingLeft": 10,
-      "symbol": "circle",
-      "block": {
-        "width": 5
-      }
+      "key": " 󰅐 ", // Ikon Jam
+      "keyColor": "yellow"
     },
     "break",
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;0;255;0m=========================\u001b[0m" // Garis atas warna #00ff00
+    }
   ]
 }
-
